@@ -22,8 +22,7 @@
 #ifdef __GNUC__                 /* Prevent 'gcc -Wall' complaining  */
 __attribute__ ((__noreturn__))  /* if we call this function as last */
 #endif                          /* statement in a non-void function */
-static void
-terminate(Boolean useExit3)
+static void terminate(Boolean useExit3)
 {
     char *s;
 
@@ -50,8 +49,7 @@ terminate(Boolean useExit3)
       * outputting the caller-supplied error message specified in
         'format' and 'ap'. */
 
-static void
-outputError(Boolean useErr, int err, Boolean flushStdout,
+static void outputError(Boolean useErr, int err, Boolean flushStdout,
         const char *format, va_list ap)
 {
 #define BUF_SIZE 500

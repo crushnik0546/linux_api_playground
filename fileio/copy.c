@@ -39,6 +39,8 @@ main(int argc, char *argv[])
     if (inputFd == -1)
         errExit("opening file %s", argv[1]);
 
+// если не указать filePerms при создании файла, то будут взяты байты со стека ("случайные")
+// no warnings, no errors
     openFlags = O_CREAT | O_WRONLY | O_TRUNC;
     filePerms = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP |
                 S_IROTH | S_IWOTH;      /* rw-rw-rw- */
