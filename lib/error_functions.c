@@ -84,8 +84,7 @@ outputError(Boolean useErr, int err, Boolean flushStdout,
 /* Display error message including 'errno' diagnostic, and
    return to caller */
 
-void
-errMsg(const char *format, ...)
+void errMsg(const char *format, ...)
 {
     va_list argList;
     int savedErrno;
@@ -102,8 +101,7 @@ errMsg(const char *format, ...)
 /* Display error message including 'errno' diagnostic, and
    terminate the process */
 
-void
-errExit(const char *format, ...)
+void errExit(const char *format, ...)
 {
     va_list argList;
 
@@ -129,8 +127,7 @@ errExit(const char *format, ...)
    stdio buffers that were partially filled by the caller and without
    invoking exit handlers that were established by the caller. */
 
-void
-err_exit(const char *format, ...)
+void err_exit(const char *format, ...)
 {
     va_list argList;
 
@@ -144,8 +141,7 @@ err_exit(const char *format, ...)
 /* The following function does the same as errExit(), but expects
    the error number in 'errnum' */
 
-void
-errExitEN(int errnum, const char *format, ...)
+void errExitEN(int errnum, const char *format, ...)
 {
     va_list argList;
 
@@ -158,8 +154,7 @@ errExitEN(int errnum, const char *format, ...)
 
 /* Print an error message (without an 'errno' diagnostic) */
 
-void
-fatal(const char *format, ...)
+void fatal(const char *format, ...)
 {
     va_list argList;
 
@@ -172,8 +167,7 @@ fatal(const char *format, ...)
 
 /* Print a command usage error message and terminate the process */
 
-void
-usageErr(const char *format, ...)
+void usageErr(const char *format, ...)
 {
     va_list argList;
 
@@ -191,8 +185,7 @@ usageErr(const char *format, ...)
 /* Diagnose an error in command-line arguments and
    terminate the process */
 
-void
-cmdLineErr(const char *format, ...)
+void cmdLineErr(const char *format, ...)
 {
     va_list argList;
 
