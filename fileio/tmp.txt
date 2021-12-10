@@ -1,1 +1,1 @@
-template text for copy files.
+new_stringext fnew_sring_x2s.

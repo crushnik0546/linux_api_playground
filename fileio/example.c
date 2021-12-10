@@ -3,6 +3,10 @@
 
 #define BUFF_SIZE 20
 
+/*
+    File for some examples, not in listing
+*/
+
 int main()
 {
     // if (close(STDIN_FILENO) == -1)
