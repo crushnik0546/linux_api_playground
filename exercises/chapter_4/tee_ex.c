@@ -6,7 +6,7 @@
 */
 
 #include <fcntl.h>
-#include "../lib/tlpi_hdr.h"
+#include "../../lib/tlpi_hdr.h"
 
 #define BUFFER_SIZE 128
 
