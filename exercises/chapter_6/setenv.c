@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
     
     printf("__Environment after changing:\n");
     if (setenv_usr(argv[1], argv[2], overwrite)) {
-        printf("Error!\n");
+        err_exit("Erorr during change environment!");
     } else {
         show_eviron();
     }
